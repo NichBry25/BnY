@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Marine Life</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .infographic {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="bg-white">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-center">
+          <div class="flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                Icon when menu is open.
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex shrink-0 items-center align-middle">
+              <img class="h-10 w-auto" src="images/coralserve.png" alt="CoralServe">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-teal-500 hover:bg-blue-400 hover:text-white">HOME</a>
+                <a href="help.html" class="rounded-md bg-blue-600 px-3 py-2 text-sm font-medium text-white" aria-current="page">HOW TO HELP</a>
+                <a href="news.html" class="rounded-md px-3 py-2 text-sm font-medium text-teal-500 hover:bg-blue-400 hover:text-white">NEWS</a>
+                <a href="donate.html" class="rounded-md px-3 py-2 text-sm font-medium text-teal-500 hover:bg-blue-400 hover:text-white">DONATIONS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+          <a href="help.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">How to Help</a>
+          <a href="news.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">News</a>
+          <a href="donate.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Donations</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Header Section -->
+  <header class="bg-blue-500 text-white text-center py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-2">Help Protect Marine Life</h1>
+      <p class="text-lg">Learn how you can make a difference</p>
+    </div>
+  </header>
+
+  <!-- Infographics Section -->
+  <section id="infographics" class="py-5">
+    <div class="container mx-auto px-4">
+      <h2 class="text-center text-3xl font-semibold mb-8">Infographics</h2>
+      <!-- Use Tailwind's grid system -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Infographic 1 -->
+        <div class="flex justify-center">
+          <img src="images/marine_infographics1.png" alt="Infographic 1" class="infographic">
+        </div>
+        <!-- Infographic 2 -->
+        <div class="flex justify-center">
+          <img src="images/marine_infographics2.png" alt="Infographic 2" class="infographic">
+        </div>
+        <!-- Infographic 3 -->
+        <div class="flex justify-center">
+          <img src="images/marine_infographics3.png" alt="Infographic 3" class="infographic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Videos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="relative" style="padding-top: 56.25%;">
+          <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/v=HQTUWK7CM-Y" allowfullscreen></iframe>
+        </div>
+        <div class="relative" style="padding-top: 56.25%;">
+          <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/videoid2" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <div class="container mx-auto">
+      <p class="mb-0">&copy; 2024 Coral Serve. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript to handle mobile menu -->
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
