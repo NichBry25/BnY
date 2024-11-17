@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body class="bg-cover" style="background-image: url(newsimg/NewsPage_BG.webp);">
+
+<!-- Taken from flowbite community edition. -->
+<nav class="bg-white border-gray-20">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+      <img src="Coral Serve Logo.jpeg" class="h-10 mx-5" alt="Flowbite Logo" />
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="#index.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOME</a>
+          </li>
+          <li>
+            <a href="#help.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOW TO HELP</a>
+          </li>
+          <li>
+            <a href="#news.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 font-bold" aria-current="page">NEWS</a>
+          </li>
+          <li>
+            <a href="#donate.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">DONATE</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container mx-auto my-10">
+    <h1 class="text-4xl font-bold text-center mb-10" style="color: whitesmoke;">Latest News</h1>
+
+    <!-- News Article Cards -->
+    <div class="news-card flex flex-row items-center mb-6 bg-white shadow-lg rounded-lg overflow-hidden" style="margin-bottom: 10px;">
+        <a href="https://www.bbc.com/news/articles/c80lgryjj4yo" target="_blank" class="flex items-center text-gray-800 w-full no-underline hover:bg-gray-50 transition duration-200">
+            <img src="newsimg/News1_Image.webp" alt="Article Thumbnail 1" class="w-48 h-48 object-cover">
+            <div class="p-6 flex flex-col justify-center">
+                <h5 class="text-xl font-semibold">'Dangerous' firework debris recovered from beach</h5>
+                <p class="text-sm text-gray-500">Published on: 2024-11-09 by Jonny Manning</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="news-card flex flex-row items-center mb-6 bg-white shadow-lg rounded-lg overflow-hidden" style="margin-bottom: 10px;">
+        <a href="https://www.bbc.com/news/articles/c93ql4x9djeo" target="_blank" class="flex items-center text-gray-800 w-full no-underline hover:bg-gray-50 transition duration-200">
+            <img src="newsimg/News2_Image.webp" alt="Article Thumbnail 2" class="w-48 h-48 object-cover">
+            <div class="p-6 flex flex-col justify-center">
+                <h5 class="text-xl font-semibold">The wildlife spotters, anglers and day trippers on coastal piers</h5>
+                <p class="text-sm text-gray-500">Published on: 2024-11-02 by Nicola Bryan</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="news-card flex flex-row items-center mb-6 bg-white shadow-lg rounded-lg overflow-hidden" style="margin-bottom: 10px;">
+        <a href="https://www.bbc.com/future/article/20241022-the-marine-fish-driven-to-extinction-by-humans" target="_blank" class="flex items-center text-gray-800 w-full no-underline hover:bg-gray-50 transition duration-200">
+            <img src="newsimg/News3_Image.webp" alt="Article Thumbnail 3" class="w-48 h-48 object-cover">
+            <div class="p-6 flex flex-col justify-center">
+                <h5 class="text-xl font-semibold">The first marine fish driven to extinction by humans</h5>
+                <p class="text-sm text-gray-500">Published on: 2024-10-23 by Chris Baraniuk</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="news-card flex flex-row items-center mb-6 bg-white shadow-lg rounded-lg overflow-hidden" style="margin-bottom: 10px;">
+        <a href="https://www.bbc.com/news/articles/c4g554gkkg5o" target="_blank" class="flex items-center text-gray-800 w-full no-underline hover:bg-gray-50 transition duration-200">
+            <img src="newsimg/News4_Image.webp" alt="Article Thumbnail 3" class="w-48 h-48 object-cover">
+            <div class="p-6 flex flex-col justify-center">
+                <h5 class="text-xl font-semibold">Injured loggerhead turtle released back into wild</h5>
+                <p class="text-sm text-gray-500">Published on: 2024-09-17 by Panela Tickell</p>
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+
