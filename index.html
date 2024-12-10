@@ -17,9 +17,7 @@
 
     </style>
 
-<script src="dist/flowbite.min.js">
- 
-</script>
+
     
 </head>
 
@@ -41,16 +39,16 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
           <li>
-            <a href="#index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 font-bold" aria-current="page">HOME</a>
+            <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 font-bold" aria-current="page">HOME</a>
           </li>
           <li>
-            <a href="#help.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOW TO HELP</a>
+            <a href="help.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOW TO HELP</a>
           </li>
           <li>
-            <a href="#news.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">NEWS</a>
+            <a href="news.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">NEWS</a>
           </li>
           <li>
-            <a href="#donate.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">DONATE</a>
+            <a href="donate.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">DONATE</a>
           </li>
          
         </ul>
@@ -58,11 +56,6 @@
     </div>
   </nav>
 
-    
-   
-  
-
-    
     <!-- Hero Page -->
     <section class="min-h-screen w-screen bg-fixed flex place-items-center place-content-center flex-col" style="background-image: url(image/bg.jpg);"> 
         <div class="mt-24 grid grid-cols-2 gap-16 place-items-center place-content-center">
@@ -88,36 +81,98 @@
         <div class="flex-col lg:flex-row bg-slate-200 p-5 rounded-lg flex justify-center items-center my-24 gap-2 lg:gap-5 w-screen">
             <h1 class="text-3xl font-bold text-center lg:text-left">You can make a difference!</h1>
             <p class="text-center lg:text-left">Even if you don't have money! <br>Even if you are busy! <br>The biggest impact starts with the smallest action!</p>
-            <button class="hover:bg-slate-800 bg-slate-600 text-white p-4 lg:p-7 rounded-lg font-bold text-xl lg:text-3xl ">LEARN HOW</button>
+            <button class="hover:bg-slate-800 bg-slate-600 text-white p-4 lg:p-7 rounded-lg font-bold text-xl lg:text-3xl" onclick="location.href='help.html'">LEARN HOW</button>
           </div>
 
 
         <div class="inset-x-0 bottom-0 w-screen flex justify-center mt-12 lg:mt-12 bg-blue-800 p-5" >
-            <h1 class="text-white font-extrabold">It all starts with YOU! Scroll down to learn what you're saving!</h1>
+            <h1 class="text-white font-extrabold text-center">It all starts with YOU! Scroll down to learn what you're saving!</h1>
         </div>
     </section>
     
     <!-- Learn More -->
-    <section class="bg-image flex  align-middle flex-col h-screen" style="background-image: url(image/ocean.jpg);">
+    <section class="bg-image flex align-middle flex-col w-screen" style="background-image: url(image/ocean.jpg);">
     
-    <h1 class="m-24 text-4xl lg:text-6xl font-extrabold text-center text-white">HERE'S WHAT YOU'RE SAVING</h1>
- 
+    <div class="container my-24"></div>
+    <h1 class="my-24 text-5xl lg:text-6xl font-extrabold text-center text-white">HERE'S WHAT YOU'RE SAVING</h1>
+    <div class="container my-12"></div>
+      
+    <div id="default-carousel" class="w-full h-screen overflow-hidden " data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-screen rounded-lg md:h-screen ">
+          <!-- Item 1 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <div class="p-10 grid lg:grid-cols-2 bg-slate-800 bg-fixed place-items-center h-screen bg-image" style="background-image: url(image/whipray.jpg);">
+              <h1 class="text-white font-extrabold text-4xl">FRESHWATER WHIPRAY</h1>
+              <p class="text-white leading-relaxed">
+                <br>Three types of freshwater whiprays. There are marbled whipray (Fluvitrygon oxyrhynchus), giant freshwater whipray (Urogymnus polylepis), and White-edge freshwater whipray (Fluvitrygon signifer). Marbled whiprays have a brown back with black spotted patterns. As the name suggests, the giant freshwater whiprays have a big body with a diameter of 1.9 meters and a weight of 600 kilograms. White-edged freshwater whiprays, on the other hand, have white edges on their bodies.
+        
+                <br><br>These three types of freshwater whiprays can be found in Sumatra and Kalimantan rivers, such as the Musi, Kapuas, Mahakam, and Barito rivers. Unfortunately, the status of all three has been deemed endangered at this moment. In the year 2020, four giant freshwater whiprays were discovered dead in the Musi Banyuasin Regency, South Sumatra, as a result of the Musi River’s polluted water.
+              </p>
+            
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <!-- For each it will be two cols at lg+ and will turn into a single column each as it gets smaller -->
+            <div class="p-10 grid lg:grid-cols-2 bg-slate-800 place-items-center h-screen bg-image bg-fixed" style="background-image: url(image/dugong.png);"> 
+              <h1 class="text-white font-extrabold text-4xl text-center">DUGONG</h1>
+              <p class="text-white leading-relaxed">
+                <br>Dugongs, often referred to as “sea cows,” are gentle marine mammals that can be found in the waters around Indonesia. 
+        
+                <br><br>These fascinating creatures are closely related to manatees and are known for their large, streamlined bodies and unique underwater grazing habits. Dugongs are listed as vulnerable species, making spotting them a rare and special experience for those visiting the coastal areas of Indonesia.
+      
+              </p>
+            </div>
+            
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                <div class="p-10 grid  lg:grid-cols-2 bg-slate-800 bg-fixed h-screen place-items-center bg-image darken" style="background-image: url(image/sawfish.png);">
+                <h1 class="text-white font-extrabold text-4xl text-center">SAWFISH</h1>
+                <p class="text-white leading-relaxed">
+                  
+                  <br>This cartilaginous fish has a saw-like snout and an extremely long snout and its body is indeed look like a shark with two pectoral fins, two dorsal fins, an anal fin, and a tail fin. Sawfish usually can be found in shallow coastal waters. 
+          
+                  <br><br>Four of the five types of sawfish found in the world’s oceans are located in Indonesia, and they are all fully protected fish species.
+          
+                  <br><br>They are narrow sawfish (Anoxypristis cuspidata), dwarf sawfish  (Pristis clavata), largetooth sawfish (Pristis pristis), and green sawfish (Pristis zijsron). According to the International Union for Conservation of Nature, narrow and dwarf sawfish are considered endangered, while largetooth sawfish and green sawfish are considered critically endangered. 
+                  <br>
+              </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <div class="p-10 grid  lg:grid-cols-2 bg-slate-800 bg-fixed h-screen place-items-center bg-image" style="background-image: url(image/cardinalfish.png);">
+              <h1 class="text-white font-extrabold text-4xl text-center">BANGGAI CARDINALFISH</h1>
+              <p class="text-white leading-relaxed">
+                <br>It’s a beauty, just five centimetres long, and it’s under threat: this is the Banggai cardinalfish. This little creature has been classified as “critically endangered” by the IUCN’s (International Union for Conservation of Nature) Red List since 2007.
+        
+                <br><br>In the last ten years, its population has declined even more dramatically – essentially because it is one of the most popular-selling ornamental marine fish ever. It was only re-discovered during the 1990s. Since then, 90 per cent of its wild population has been fished-out for the aquarium industry.
+        
+              </p>
+            
+            </div>
+          </div>
+          <div class="absolute z-30 flex -translate-x-1/2 top-5 left-1/2 space-x-3 rtl:space-x-reverse">
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          </div>
 
-    <div class="p-10 grid  lg:grid-cols-2 bg-slate-800 bg-fixed place-items-center bg-image darken" style="background-image: url(image/whipray.jpg);">
-      <h1 class="text-white font-extrabold text-4xl">FRESHWATER WHIPRAY</h1>
-      <p class="text-white leading-relaxed">
-        <br>Three types of freshwater whiprays. There are marbled whipray (Fluvitrygon oxyrhynchus), giant freshwater whipray (Urogymnus polylepis), and White-edge freshwater whipray (Fluvitrygon signifer). Marbled whiprays have a brown back with black spotted patterns. As the name suggests, the giant freshwater whiprays have a big body with a diameter of 1.9 meters and a weight of 600 kilograms. White-edged freshwater whiprays, on the other hand, have white edges on their bodies.
+      </div>
+     
 
-        <br><br>These three types of freshwater whiprays can be found in Sumatra and Kalimantan rivers, such as the Musi, Kapuas, Mahakam, and Barito rivers. Unfortunately, the status of all three has been deemed endangered at this moment. In the year 2020, four giant freshwater whiprays were discovered dead in the Musi Banyuasin Regency, South Sumatra, as a result of the Musi River’s polluted water.
+     
+      </div>
+</div>
 
-        <br><br>In addition to the fish mentioned here, there are various other finned fish that have been granted fully protected status, such as the Indonesian coelacanth, tricolor shark, and barbodes microps fish. The existence of the decree to provide protection status is indeed an important step. But, of course, the most important thing is to ensure that the protection effort is truly executed. 
-
-        <br><br>As young people, we shouldn’t ignore this issue! We can start showing our concern, for example by educating people around us and also taking action to clean the rivers so that they are free from waste and other pollutants. 
-      </p>
-    
-    </div>
 
     </section>
+    
 
+
+
+    <script src="dist/flowbite.min.js"> </script>
 </body>
 </html>
