@@ -8,10 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background-image: url("images/seabackground.jpeg");
+            background-image: url("images/oceanbg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .info-link {
+            text-decoration: underline;
+            color: inherit;
+        }
+
+        .info-link:hover {
+            color: blue;
         }
     </style>
 </head>
@@ -19,74 +32,96 @@
     <!-- Navigation Bar -->
     <header>
         <nav class="bg-white border-gray-20">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
-              <img src="images/logoCut.jpeg" class="h-10 mx-5" alt="CoralServe Logo" />
-              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                  <span class="sr-only">Open main menu</span>
-                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                  </svg>
-              </button>
-              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-                  <li>
-                    <a href="index.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOME</a>
-                  </li>
-                  <li>
-                    <a href="help.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOW TO HELP</a>
-                  </li>
-                  <li>
-                    <a href="news.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">NEWS</a>
-                  </li>
-                  <li>
-                    <a href="donate.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 font-bold" aria-current="page">DONATE</a>
-                  </li>
-                 
-                </ul>
-              </div>
+            <div class="max-w-screen-xl mx-auto p-4 flex flex-col items-center md:flex-row md:justify-center">
+                <img src="images/logoCut.jpeg" class="h-10 mb-4 md:mb-0 md:mr-8" alt="CoralServe Logo" />
+                <button id="mobile-menu-button" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col items-center md:flex-row md:space-x-8">
+                        <li>
+                            <a href="index.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOME</a>
+                        </li>
+                        <li>
+                            <a href="help.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOW TO HELP</a>
+                        </li>
+                        <li>
+                            <a href="news.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="donate.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 font-bold" aria-current="page">DONATE</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:hidden hidden" id="mobile-menu">
+                    <ul class="font-medium flex flex-col items-center mt-4 border border-gray-100 rounded-lg bg-gray-50">
+                        <li>
+                            <a href="index.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOME</a>
+                        </li>
+                        <li>
+                            <a href="help.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">HOW TO HELP</a>
+                        </li>
+                        <li>
+                            <a href="news.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 font-bold">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="donate.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 font-bold" aria-current="page">DONATE</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
           </nav>
     </header>
     
     <div class="container mx-auto my-12">
-        <h1 class="text-4xl font-bold text-center mb-8">Support These Organizations</h1>
+      <div class="flex justify-center mb-8">
+        <h1 class="text-4xl font-bold bg-black text-white p-4 inline-block">Support These Organizations</h1>
+      </div>     
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="org1.jpg" class="w-full h-48 object-cover" alt="Organization 1">
-                <div class="p-6">
-                    <h5 class="text-xl font-bold mb-2">Organization 1</h5>
-                    <p class="text-gray-700 mb-4">Brief description of Organization 1.</p>
-                    <a href="https://donate-to-organization1.com" class="bg-blue-500 text-white px-4 py-2 rounded">Donate Now</a>
-                </div>
+              <img src="images/livingsea-asia.webp" class="w-full h-48 object-cover" alt="Livingseas Asia">
+              <div class="p-6 text-center"> <!-- Added text-center here -->
+                  <h5 class="text-xl font-bold mb-2">Livingseas Asia</h5>
+                  <p class="text-gray-700 mb-4">
+                      <a href="https://www.livingseasfoundation.org/coralreefrestoration" class="info-link">Click to visit them</a>
+                  </p>
+                  <a href="https://www.livingseasfoundation.org/support-us" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Donate Now</a>
+              </div>
             </div>
             <!-- Card 2 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="org2.jpg" class="w-full h-48 object-cover" alt="Organization 2">
-                <div class="p-6">
-                    <h5 class="text-xl font-bold mb-2">Organization 2</h5>
-                    <p class="text-gray-700 mb-4">Brief description of Organization 2.</p>
-                    <a href="https://donate-to-organization2.com" class="bg-blue-500 text-white px-4 py-2 rounded">Donate Now</a>
-                </div>
+              <img src="images/gili-eco-trust.webp" class="w-full h-48 object-cover" alt="Gili Eco Trust">
+              <div class="p-6 text-center"> <!-- Added text-center here -->
+                  <h5 class="text-xl font-bold mb-2">Gili Eco Trust</h5>
+                  <p class="text-gray-700 mb-4">
+                      <a href="https://www.giliecotrust.com/" class="info-link">Click to visit them</a>
+                  </p>
+                  <a href="https://www.giliecotrust.com/donate-1" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Donate Now</a>
+              </div>
             </div>
             <!-- Card 3 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="org3.jpg" class="w-full h-48 object-cover" alt="Organization 3">
-                <div class="p-6">
-                    <h5 class="text-xl font-bold mb-2">Organization 3</h5>
-                    <p class="text-gray-700 mb-4">Brief description of Organization 3.</p>
-                    <a href="https://donate-to-organization3.com" class="bg-blue-500 text-white px-4 py-2 rounded">Donate Now</a>
-                </div>
+              <img src="images/indonesia-biru-foundation.webp" class="w-full h-48 object-cover" alt="Indonesia Biru Foundation">
+              <div class="p-6 text-center"> <!-- Added text-center here -->
+                  <h5 class="text-xl font-bold mb-2">Indonesia Biru Foundation</h5>
+                  <p class="text-gray-700 mb-4">
+                      <a href="https://indonesiabiru.id/" class="info-link">Click to visit them</a>
+                  </p>
+                  <a href="https://www.patreon.com/ibf" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Donate Now</a>
+              </div>
             </div>
             <!-- More cards can be added here -->
         </div>
     </div>
 
-
     <!-- JavaScript to handle mobile menu -->
     <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+        const btn = document.getElementById("mobile-menu-button");
+        const menu = document.getElementById("mobile-menu");
 
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
