@@ -140,6 +140,19 @@
 
 
   <!-- JavaScript to handle mobile menu -->
-  <script src="dist/flowbite.min.js"> </script>
+  <script>
+    function openModal(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+  </script>
+
+  <script src="dist/flowbite.min.js"> 
+    
+  </script>
 </body>
 </html>
