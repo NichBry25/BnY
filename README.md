@@ -22,3 +22,5 @@ HTML & CSS: The foundational technologies for building the structure and styling
 
 JavaScript: For adding interactivity and dynamic elements to the website.
 
+# Getting Started
+To enter the website, all you need to do is click this link: https://nichbry25.github.io/BnY/index.html
