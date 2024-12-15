@@ -8,12 +8,17 @@ Our oceans are home to a vast array of marine life, each playing a crucial role 
 
 # Features
 Educational Content: Detailed articles and information about various marine species and their habitats.
+
 Conservation Tips: Practical advice and steps on how to help protect marine life.
+
 Interactive Elements: Engaging tools such as quizzes and infographics to enhance user learning.
+
 Responsive Design: Accessible and user-friendly design across all devices.
 
 # Technologies Used
 Tailwind CSS: Used as the main framework for styling the website, providing utility-first CSS classes to create a responsive and modern design.
+
 HTML & CSS: The foundational technologies for building the structure and styling of the website.
+
 JavaScript: For adding interactivity and dynamic elements to the website.
 
